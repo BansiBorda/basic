@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Gallery - E-Commerce Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            /* padding-top: 56px; Adjust based on navbar height */
+        }
+
+        .navbar, footer {
+            background-color: #343a40; /* Consistent color for navbar and footer */
+        }
+
+        .navbar-brand, .nav-link, .btn-outline-light {
+            color: #ffffff !important; /* White color for text and buttons */
+        }
+
+        .navbar-brand:hover, .nav-link:hover, .btn-outline-light:hover {
+            color: #d4d4d4 !important; /* Slightly lighter color on hover */
+        }
+
+        footer {
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .footer-links a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons a {
+            color: #ffffff;
+            margin: 0 10px;
+            font-size: 20px;
+        }
+
+        .social-icons a:hover {
+            color: #d4d4d4;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .card-img-top {
+            height: 200px; /* Adjust height as needed */
+            object-fit: cover; /* Ensures the image covers the container */
+            width: 100%; /* Makes sure the image width fills the container */
+        }
+
+        .card-body {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html">E-Commerce</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                        Product Gallery
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="gallery.html?category=men">Men</a>
+                        <a class="dropdown-item" href="gallery.html?category=women">Women</a>
+                        <a class="dropdown-item" href="gallery.html?category=kids">Kids</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="testimonials.html">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+            <a href="signup.html" class="btn btn-outline-light">Sign Up / Sign In</a>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1>Product Gallery</h1>
+        <p>Browse our products by category.</p>
+
+        <div class="row" id="productContainer">
+            <!-- Products will be dynamically inserted here -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row footer-links">
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <a href="index.html">Home</a> | 
+                    <a href="about.html">About Us</a> | 
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Information</h5>
+                    <p>123 E-Commerce St.<br>City, Country<br>Email: info@ecommerce.com</p>
+                </div>
+            </div>
+            <p>&copy; 2024 E-Commerce Website. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Example products for each category
+        const products = {
+            men: [
+                { name: 'Men\'s Shirt', image: 'https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQyJWHP2AmYjRY4VWc4RUd4Z11AiccgXwNlm56jnkthlmSj3BGa422cZmMhXpGry8FVHvgRg5pj0picN_sm8Wor8qeTpz4-njQuMpVrPrfrlFtsRfUYTNiCZg', price: '$25' },
+                { name: 'Men\'s Jacket', image: 'https://images.bestsellerclothing.in/data/JJ-updation/march-21-2024/216781001_g0.jpg?width=415&height=550&mode=fill&fill=blur&format=auto', price: '$75' }
+            ],
+            women: [
+                { name: 'Women\'s Dress', image: 'https://cdn.shopify.com/s/files/1/0266/6276/4597/files/300984487BEIGE_1.jpg?v=1720184066', price: '$50' },
+                { name: 'Women\'s Handbag', image: 'https://www.thestrokesgallery.com/cdn/shop/files/AG2_3515-Editcopy.jpg?v=1710415867&width=713', price: '$80' }
+            ],
+            kids: [
+                { name: 'Kid\'s T-shirt', image: 'https://images.meesho.com/images/products/387517307/qqi2t_1200.jpg', price: '$15' },
+                { name: 'Kid\'s Toy', image: 'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTlDC99zR4wsxhLxDAXuaGV1uW7vsygGOUfDoJ5sE2Oa66nix8NzGfFOQoZU0VLFPduwLkTbecEbU_5d6DTaH_n9v9lqaEWUYmrkelBed7n0ZqGYTWECOY-iudQq-XIeh_t0enxRQQ1uwM&usqp=CAc', price: '$20' }
+            ]
+        };
+
+        // Get the category from the URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const category = urlParams.get('category');
+
+        // Find the container element
+        const productContainer = document.getElementById('productContainer');
+
+        // Display the products for the selected category
+        if (category && products[category]) {
+            products[category].forEach(product => {
+                const productCard = `
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <img src="${product.image}" class="card-img-top" alt="${product.name}">
+                            <div class="card-body">
+                                <h5 class="card-title">${product.name}</h5>
+                                <p class="card-text">${product.price}</p>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                productContainer.innerHTML += productCard;
+            });
+        } else {
+            productContainer.innerHTML = '<p>No products found for this category.</p>';
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- For FontAwesome icons -->
+</body>
+</html>

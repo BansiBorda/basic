@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - E-Commerce Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Ensure the body takes up the full height of the viewport */
+        html, body {
+            height: 100%;
+        }
+
+        /* Wrapper to make sure footer sticks to the bottom */
+        .content-wrapper {
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Main content should take up all available space before footer */
+        .content {
+            flex: 1;
+        }
+
+        /* Improved footer design */
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: #d4d4d4;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: #d4d4d4;
+            font-size: 20px;
+        }
+
+        .social-icons a:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="index.html">E-Commerce</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                            Product Gallery
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="gallery.html?category=men">Men</a>
+                            <a class="dropdown-item" href="gallery.html?category=women">Women</a>
+                            <a class="dropdown-item" href="gallery.html?category=kids">Kids</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="testimonials.html">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <a href="signup.html" class="btn btn-outline-light">Sign Up / Sign In</a>
+            </div>
+        </nav>
+
+        <div class="container mt-5 content">
+            <h1>About Us</h1>
+            <p>Welcome to our E-Commerce platform where we provide the best quality products at unbeatable prices. Our goal is to offer a seamless shopping experience for our customers.</p>
+            <p>Our journey started in 2024 with the vision of becoming a one-stop shop for all your needs. We pride ourselves on customer satisfaction and quality service.</p>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Our Mission</h3>
+                    <p>To deliver high-quality products with exceptional customer service. We strive to make shopping convenient and accessible for everyone.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Our Vision</h3>
+                    <p>To be the leading online store, known for quality products and excellent customer support. We aim to continuously innovate and improve our services.</p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="text-center bg-primary">
+            <div class="container">
+                <div class="row footer-links">
+                    <div class="col-md-4">
+                        <h5>Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Follow Us</h5>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Contact Information</h5>
+                        <p>123 E-Commerce St.<br>City, Country<br>Email: info@ecommerce.com</p>
+                    </div>
+                </div>
+                <p>&copy; 2024 E-Commerce Website. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials - E-Commerce Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 56px; /* Adjust this value based on your navbar height */
+        }
+
+        .testimonial-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .testimonial-card img {
+            border-radius: 50%;
+            width: 64px; /* Ensure consistent image size */
+            height: 64px; /* Ensure consistent image size */
+            object-fit: cover; /* Ensure proper image fit */
+        }
+
+        .testimonial-card .card-body {
+            padding: 20px;
+        }
+
+        .testimonial-card .card-title {
+            margin-bottom: 15px;
+        }
+
+        .navbar, footer {
+            background-color: #343a40; /* Same color for navbar and footer */
+        }
+
+        footer {
+            color: white;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: #d4d4d4;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: #d4d4d4;
+            font-size: 20px;
+        }
+
+        .social-icons a:hover {
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: 970px;
+            margin-top: 12px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="index.html">E-Commerce</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                        Product Gallery
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="gallery.html?category=men">Men</a>
+                        <a class="dropdown-item" href="gallery.html?category=women">Women</a>
+                        <a class="dropdown-item" href="gallery.html?category=kids">Kids</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="testimonials.html">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+            <a href="signup.html" class="btn btn-outline-light">Sign Up / Sign In</a>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1 class="mb-4">Customer Testimonials</h1>
+        <p class="mb-4">Here’s what our customers have to say about our products and services:</p>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card testimonial-card">
+                    <img src="data:image/jpeg;base64,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" class="card-img-top mx-auto mt-3" alt="Customer 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">John Doe</h5>
+                        <p class="card-text">I had an amazing shopping experience. The quality of the products is top-notch, and the customer service is excellent.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card testimonial-card">
+                    <img src="data:image/jpeg;base64,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" class="card-img-top mx-auto mt-3" alt="Customer 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Jane Smith</h5>
+                        <p class="card-text">Great variety of products to choose from! The website is easy to navigate, and the delivery was super fast.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card testimonial-card">
+                    <img src="data:image/jpeg;base64,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" class="card-img-top mx-auto mt-3" alt="Customer 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Michael Johnson</h5>
+                        <p class="card-text">I love the exclusive discounts! This is my go-to site for shopping and the delivery was super fast Highly recommended :)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center">
+        <div class="container">
+            <div class="row footer-links">
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Information</h5>
+                    <p>123 E-Commerce St.<br>City, Country<br>Email: info@ecommerce.com</p>
+                </div>
+            </div>
+            <p>&copy; 2024 E-Commerce Website. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
